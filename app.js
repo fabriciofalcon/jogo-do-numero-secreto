@@ -31,7 +31,7 @@ function verificarChute() {
         exibirTextoNaTela('p', 'Digite um número entre 1 e 10.');
     } else if (numeroAleatorio == chute) {
         exibirTextoNaTela('h1', 'Acertou!');
-        let palvaraTentativas = tentativas > 1? 'tentativas': 'tenatativa';
+        let palvaraTentativas = tentativas > 1? 'tentativas': 'tentativa';
         let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palvaraTentativas}.`;
         exibirTextoNaTela('p', mensagemTentativas);
         document.getElementById('barra').setAttribute('disabled', true);
